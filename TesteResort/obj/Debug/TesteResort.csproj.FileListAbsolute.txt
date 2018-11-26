@@ -1,0 +1,23 @@
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\obj\Debug\TesteResort.csprojResolveAssemblyReference.cache
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\obj\Debug\TesteResort.MainForm.resources
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\obj\Debug\TesteResort.csproj.GenerateResource.Cache
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\bin\Debug\TesteResort.exe.config
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\bin\Debug\TesteResort.exe
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\bin\Debug\TesteResort.pdb
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\obj\Debug\TesteResort.exe
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\obj\Debug\TesteResort.pdb
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\obj\Debug\TesteResort.Form1.resources
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\obj\Debug\TesteResort.ControleReserva.resources
+C:\Users\dell i5\Documents\SharpDevelop Projects\TesteResort\TesteResort\obj\Debug\TesteResort.UserControl2.resources
+C:\Stuff\sistema-resort\TesteResort\TesteResort\bin\Debug\TesteResort.exe.config
+C:\Stuff\sistema-resort\TesteResort\TesteResort\obj\Debug\TesteResort.exe
+C:\Stuff\sistema-resort\TesteResort\TesteResort\obj\Debug\TesteResort.pdb
+C:\Stuff\sistema-resort\TesteResort\TesteResort\bin\Debug\TesteResort.exe
+C:\Stuff\sistema-resort\TesteResort\TesteResort\bin\Debug\TesteResort.pdb
+C:\Stuff\sistema-resort\TesteResort\TesteResort\bin\Debug\MySql.Data.dll
+C:\Stuff\sistema-resort\TesteResort\TesteResort\obj\Debug\TesteResort.csprojResolveAssemblyReference.cache
+C:\Stuff\sistema-resort\TesteResort\TesteResort\obj\Debug\TesteResort.Form1.resources
+C:\Stuff\sistema-resort\TesteResort\TesteResort\obj\Debug\TesteResort.MainForm.resources
+C:\Stuff\sistema-resort\TesteResort\TesteResort\obj\Debug\TesteResort.ControleReserva.resources
+C:\Stuff\sistema-resort\TesteResort\TesteResort\obj\Debug\TesteResort.UserControl2.resources
+C:\Stuff\sistema-resort\TesteResort\TesteResort\obj\Debug\TesteResort.csproj.GenerateResource.Cache

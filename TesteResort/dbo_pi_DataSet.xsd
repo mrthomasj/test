@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbo_pi_DataSet" targetNamespace="http://tempuri.org/dbo_pi_DataSet.xsd" xmlns:mstns="http://tempuri.org/dbo_pi_DataSet.xsd" xmlns="http://tempuri.org/dbo_pi_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbo_pi_CS" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbo_pi_CS (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TesteResort.Properties.Settings.GlobalReference.Default.dbo_pi_CS" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_clienteTableAdapter" GeneratorDataComponentClassName="tbl_clienteTableAdapter" Name="tbl_cliente" UserDataComponentName="tbl_clienteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbo_pi_CS (Settings)" DbObjectName="dbo_pi.tbl_cliente" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT cli_cpf, tbl_funcionarios_func_cpf, tbl_reg_estadias_id_estadia, cli_nome, cli_dtnasc, cli_tel1, cli_tel2, cli_end_lograd, cli_end_cidade, cli_end_UF FROM tbl_cliente</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_eventosTableAdapter" GeneratorDataComponentClassName="tbl_eventosTableAdapter" Name="tbl_eventos" UserDataComponentName="tbl_eventosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbo_pi_CS (Settings)" DbObjectName="dbo_pi.tbl_eventos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT eve_id, tbl_funcionarios_func_cpf, eve_nome, eve_data, eve_valor_unid, eve_hora_inicio, eve_hora_intervalo, eve_hora_fim, eve_tipo_ingresso FROM tbl_eventos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_eventos_has_tbl_clienteTableAdapter" GeneratorDataComponentClassName="tbl_eventos_has_tbl_clienteTableAdapter" Name="tbl_eventos_has_tbl_cliente" UserDataComponentName="tbl_eventos_has_tbl_clienteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbo_pi_CS (Settings)" DbObjectName="dbo_pi.tbl_eventos_has_tbl_cliente" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tbl_eventos_eve_id, tbl_cliente_cli_cpf FROM tbl_eventos_has_tbl_cliente</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_funcionariosTableAdapter" GeneratorDataComponentClassName="tbl_funcionariosTableAdapter" Name="tbl_funcionarios" UserDataComponentName="tbl_funcionariosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbo_pi_CS (Settings)" DbObjectName="dbo_pi.tbl_funcionarios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT func_cpf, func_nome, func_cargo, func_hr_entrada, func_hr_saida, func_dt_adm, perm_adm FROM tbl_funcionarios</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_produtosTableAdapter" GeneratorDataComponentClassName="tbl_produtosTableAdapter" Name="tbl_produtos" UserDataComponentName="tbl_produtosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbo_pi_CS (Settings)" DbObjectName="dbo_pi.tbl_produtos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_prod, tbl_funcionarios_func_cpf, prod_nome, prod_valor FROM tbl_produtos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_produtos_has_tbl_clienteTableAdapter" GeneratorDataComponentClassName="tbl_produtos_has_tbl_clienteTableAdapter" Name="tbl_produtos_has_tbl_cliente" UserDataComponentName="tbl_produtos_has_tbl_clienteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbo_pi_CS (Settings)" DbObjectName="dbo_pi.tbl_produtos_has_tbl_cliente" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tbl_produtos_id_prod, tbl_cliente_cli_cpf FROM tbl_produtos_has_tbl_cliente</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_quartosTableAdapter" GeneratorDataComponentClassName="tbl_quartosTableAdapter" Name="tbl_quartos" UserDataComponentName="tbl_quartosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbo_pi_CS (Settings)" DbObjectName="dbo_pi.tbl_quartos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT qua_num, tbl_funcionarios_func_cpf, tbl_reg_estadias_id_estadia, tbl_cliente_cli_cpf, qua_andar, qua_hosp_limit, qua_valor_dia, qua_tipo_acomod, qua_status FROM tbl_quartos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_reg_estadiasTableAdapter" GeneratorDataComponentClassName="tbl_reg_estadiasTableAdapter" Name="tbl_reg_estadias" UserDataComponentName="tbl_reg_estadiasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbo_pi_CS (Settings)" DbObjectName="dbo_pi.tbl_reg_estadias" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_estadia, tbl_funcionarios_func_cpf, cli_cpf, cli_nome, qua_num, qtd_hospedes, data_checkin, data_checkout, hora_checkin, hora_checkout, valor_total FROM tbl_reg_estadias</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbo_pi_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbo_pi_DataSet" msprop:Generator_UserDSName="dbo_pi_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_cliente" msprop:Generator_TableClassName="tbl_clienteDataTable" msprop:Generator_TableVarName="tabletbl_cliente" msprop:Generator_TablePropName="tbl_cliente" msprop:Generator_RowDeletingName="tbl_clienteRowDeleting" msprop:Generator_RowChangingName="tbl_clienteRowChanging" msprop:Generator_RowEvHandlerName="tbl_clienteRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_clienteRowDeleted" msprop:Generator_UserTableName="tbl_cliente" msprop:Generator_RowChangedName="tbl_clienteRowChanged" msprop:Generator_RowEvArgName="tbl_clienteRowChangeEvent" msprop:Generator_RowClassName="tbl_clienteRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_eventos" msprop:Generator_TableClassName="tbl_eventosDataTable" msprop:Generator_TableVarName="tabletbl_eventos" msprop:Generator_TablePropName="tbl_eventos" msprop:Generator_RowDeletingName="tbl_eventosRowDeleting" msprop:Generator_RowChangingName="tbl_eventosRowChanging" msprop:Generator_RowEvHandlerName="tbl_eventosRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_eventosRowDeleted" msprop:Generator_UserTableName="tbl_eventos" msprop:Generator_RowChangedName="tbl_eventosRowChanged" msprop:Generator_RowEvArgName="tbl_eventosRowChangeEvent" msprop:Generator_RowClassName="tbl_eventosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_eventos_has_tbl_cliente" msprop:Generator_TableClassName="tbl_eventos_has_tbl_clienteDataTable" msprop:Generator_TableVarName="tabletbl_eventos_has_tbl_cliente" msprop:Generator_TablePropName="tbl_eventos_has_tbl_cliente" msprop:Generator_RowDeletingName="tbl_eventos_has_tbl_clienteRowDeleting" msprop:Generator_RowChangingName="tbl_eventos_has_tbl_clienteRowChanging" msprop:Generator_RowEvHandlerName="tbl_eventos_has_tbl_clienteRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_eventos_has_tbl_clienteRowDeleted" msprop:Generator_UserTableName="tbl_eventos_has_tbl_cliente" msprop:Generator_RowChangedName="tbl_eventos_has_tbl_clienteRowChanged" msprop:Generator_RowEvArgName="tbl_eventos_has_tbl_clienteRowChangeEvent" msprop:Generator_RowClassName="tbl_eventos_has_tbl_clienteRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_funcionarios" msprop:Generator_TableClassName="tbl_funcionariosDataTable" msprop:Generator_TableVarName="tabletbl_funcionarios" msprop:Generator_TablePropName="tbl_funcionarios" msprop:Generator_RowDeletingName="tbl_funcionariosRowDeleting" msprop:Generator_RowChangingName="tbl_funcionariosRowChanging" msprop:Generator_RowEvHandlerName="tbl_funcionariosRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_funcionariosRowDeleted" msprop:Generator_UserTableName="tbl_funcionarios" msprop:Generator_RowChangedName="tbl_funcionariosRowChanged" msprop:Generator_RowEvArgName="tbl_funcionariosRowChangeEvent" msprop:Generator_RowClassName="tbl_funcionariosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_produtos" msprop:Generator_TableClassName="tbl_produtosDataTable" msprop:Generator_TableVarName="tabletbl_produtos" msprop:Generator_TablePropName="tbl_produtos" msprop:Generator_RowDeletingName="tbl_produtosRowDeleting" msprop:Generator_RowChangingName="tbl_produtosRowChanging" msprop:Generator_RowEvHandlerName="tbl_produtosRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_produtosRowDeleted" msprop:Generator_UserTableName="tbl_produtos" msprop:Generator_RowChangedName="tbl_produtosRowChanged" msprop:Generator_RowEvArgName="tbl_produtosRowChangeEvent" msprop:Generator_RowClassName="tbl_produtosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_produtos_has_tbl_cliente" msprop:Generator_TableClassName="tbl_produtos_has_tbl_clienteDataTable" msprop:Generator_TableVarName="tabletbl_produtos_has_tbl_cliente" msprop:Generator_TablePropName="tbl_produtos_has_tbl_cliente" msprop:Generator_RowDeletingName="tbl_produtos_has_tbl_clienteRowDeleting" msprop:Generator_RowChangingName="tbl_produtos_has_tbl_clienteRowChanging" msprop:Generator_RowEvHandlerName="tbl_produtos_has_tbl_clienteRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_produtos_has_tbl_clienteRowDeleted" msprop:Generator_UserTableName="tbl_produtos_has_tbl_cliente" msprop:Generator_RowChangedName="tbl_produtos_has_tbl_clienteRowChanged" msprop:Generator_RowEvArgName="tbl_produtos_has_tbl_clienteRowChangeEvent" msprop:Generator_RowClassName="tbl_produtos_has_tbl_clienteRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_quartos" msprop:Generator_TableClassName="tbl_quartosDataTable" msprop:Generator_TableVarName="tabletbl_quartos" msprop:Generator_TablePropName="tbl_quartos" msprop:Generator_RowDeletingName="tbl_quartosRowDeleting" msprop:Generator_RowChangingName="tbl_quartosRowChanging" msprop:Generator_RowEvHandlerName="tbl_quartosRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_quartosRowDeleted" msprop:Generator_UserTableName="tbl_quartos" msprop:Generator_RowChangedName="tbl_quartosRowChanged" msprop:Generator_RowEvArgName="tbl_quartosRowChangeEvent" msprop:Generator_RowClassName="tbl_quartosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_reg_estadias" msprop:Generator_TableClassName="tbl_reg_estadiasDataTable" msprop:Generator_TableVarName="tabletbl_reg_estadias" msprop:Generator_TablePropName="tbl_reg_estadias" msprop:Generator_RowDeletingName="tbl_reg_estadiasRowDeleting" msprop:Generator_RowChangingName="tbl_reg_estadiasRowChanging" msprop:Generator_RowEvHandlerName="tbl_reg_estadiasRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_reg_estadiasRowDeleted" msprop:Generator_UserTableName="tbl_reg_estadias" msprop:Generator_RowChangedName="tbl_reg_estadiasRowChanged" msprop:Generator_RowEvArgName="tbl_reg_estadiasRowChangeEvent" msprop:Generator_RowClassName="tbl_reg_estadiasRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
