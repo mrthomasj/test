@@ -1,8 +1,8 @@
 ﻿/*
  * Created by SharpDevelop.
  * User: dell i5
- * Date: 19/11/2018
- * Time: 01:38
+ * Date: 23/11/2018
+ * Time: 04:17
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -14,11 +14,11 @@ using System.Windows.Forms;
 namespace TesteResort
 {
 	/// <summary>
-	/// Description of UserControl2.
+	/// Description of GerControl1.
 	/// </summary>
-	public partial class UserControl2 : UserControl
+	public partial class UserControl3 : UserControl
 	{
-		public UserControl2()
+		public UserControl3()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -29,14 +29,5 @@ namespace TesteResort
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-		void UserControl2Load(object sender, EventArgs e)
-		{
-	
-		}
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            richTextBox1.Visible = true;
-        }
-    }
+	}
 }

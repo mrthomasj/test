@@ -1,35 +1,32 @@
 ﻿/*
  * Created by SharpDevelop.
  * User: dell i5
- * Date: 16/11/2018
- * Time: 05:15
+ * Date: 23/11/2018
+ * Time: 03:00
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 namespace TesteResort
 {
-	partial class Form1
+	partial class Form2
 	{
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Panel panel3;
-		private System.Windows.Forms.Panel panel2;
+		private TesteResort.UserControl2 userControl21;
+		private System.Windows.Forms.Panel pnClick;
 		private System.Windows.Forms.Button btnCkot;
-		private System.Windows.Forms.Button btnRes;
 		private System.Windows.Forms.Button btnEx;
 		private System.Windows.Forms.Button btnPac;
 		private System.Windows.Forms.Button btnQrt;
+		private System.Windows.Forms.Button btnRes;
 		private System.Windows.Forms.Button btnHome;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Panel pnClick;
+		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button btnSair;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Panel panel4;
-		private TesteResort.ControleReserva controleReserva1;
-		private TesteResort.UserControl2 userControl21;
+		private System.Windows.Forms.Panel panel2;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -52,10 +49,9 @@ namespace TesteResort
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSair = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pnClick = new System.Windows.Forms.Panel();
             this.btnCkot = new System.Windows.Forms.Button();
             this.btnEx = new System.Windows.Forms.Button();
@@ -63,57 +59,45 @@ namespace TesteResort
             this.btnQrt = new System.Windows.Forms.Button();
             this.btnRes = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panelIni = new System.Windows.Forms.Panel();
+            this.panelRes = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.userControl21 = new TesteResort.UserControl2();
+            this.cadFunc1 = new TesteResort.CadFunc();
             this.controleReserva1 = new TesteResort.ControleReserva();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.quartos1 = new TesteResort.Quartos();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panelIni.SuspendLayout();
+            this.panelRes.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // label1
             // 
-            this.panel2.Controls.Add(this.btnSair);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1000, 53);
-            this.panel2.TabIndex = 1;
+            this.label1.Location = new System.Drawing.Point(23, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "LOGO";
             // 
-            // btnSair
+            // panel3
             // 
-            this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSair.BackColor = System.Drawing.Color.White;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
-            this.btnSair.Location = new System.Drawing.Point(946, 4);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(52, 47);
-            this.btnSair.TabIndex = 10;
-            this.btnSair.UseVisualStyleBackColor = false;
-            this.btnSair.Click += new System.EventHandler(this.BtnSairClick);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(134)))), ((int)(((byte)(179)))));
-            this.panel1.Controls.Add(this.pnClick);
-            this.panel1.Controls.Add(this.btnCkot);
-            this.panel1.Controls.Add(this.btnEx);
-            this.panel1.Controls.Add(this.btnPac);
-            this.panel1.Controls.Add(this.btnQrt);
-            this.panel1.Controls.Add(this.btnRes);
-            this.panel1.Controls.Add(this.btnHome);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 749);
-            this.panel1.TabIndex = 0;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(134)))), ((int)(((byte)(179)))));
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 140);
+            this.panel3.TabIndex = 2;
             // 
             // pnClick
             // 
@@ -137,7 +121,7 @@ namespace TesteResort
             this.btnCkot.TabIndex = 8;
             this.btnCkot.Text = "Check-out";
             this.btnCkot.UseVisualStyleBackColor = true;
-            this.btnCkot.Click += new System.EventHandler(this.BtnCkotClick);
+            this.btnCkot.Click += new System.EventHandler(this.btnCkot_Click);
             // 
             // btnEx
             // 
@@ -153,7 +137,7 @@ namespace TesteResort
             this.btnEx.TabIndex = 6;
             this.btnEx.Text = "Extras";
             this.btnEx.UseVisualStyleBackColor = true;
-            this.btnEx.Click += new System.EventHandler(this.BtnExClick);
+            this.btnEx.Click += new System.EventHandler(this.btnEx_Click);
             // 
             // btnPac
             // 
@@ -169,7 +153,7 @@ namespace TesteResort
             this.btnPac.TabIndex = 5;
             this.btnPac.Text = "Pacotes";
             this.btnPac.UseVisualStyleBackColor = true;
-            this.btnPac.Click += new System.EventHandler(this.BtnPacClick);
+            this.btnPac.Click += new System.EventHandler(this.btnPac_Click);
             // 
             // btnQrt
             // 
@@ -185,7 +169,7 @@ namespace TesteResort
             this.btnQrt.TabIndex = 4;
             this.btnQrt.Text = "Quartos";
             this.btnQrt.UseVisualStyleBackColor = true;
-            this.btnQrt.Click += new System.EventHandler(this.Button2Click);
+            this.btnQrt.Click += new System.EventHandler(this.btnQrt_Click);
             // 
             // btnRes
             // 
@@ -201,7 +185,7 @@ namespace TesteResort
             this.btnRes.TabIndex = 7;
             this.btnRes.Text = "Reserva";
             this.btnRes.UseVisualStyleBackColor = true;
-            this.btnRes.Click += new System.EventHandler(this.BtnResClick);
+            this.btnRes.Click += new System.EventHandler(this.btnRes_Click);
             // 
             // btnHome
             // 
@@ -217,43 +201,127 @@ namespace TesteResort
             this.btnHome.TabIndex = 3;
             this.btnHome.Text = "Ínicio";
             this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.Button1Click);
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // panel3
+            // panel1
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(134)))), ((int)(((byte)(179)))));
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 140);
-            this.panel3.TabIndex = 2;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(134)))), ((int)(((byte)(179)))));
+            this.panel1.Controls.Add(this.pnClick);
+            this.panel1.Controls.Add(this.btnCkot);
+            this.panel1.Controls.Add(this.btnEx);
+            this.panel1.Controls.Add(this.btnPac);
+            this.panel1.Controls.Add(this.btnQrt);
+            this.panel1.Controls.Add(this.btnRes);
+            this.panel1.Controls.Add(this.btnHome);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 749);
+            this.panel1.TabIndex = 5;
             // 
-            // label1
+            // btnSair
             // 
-            this.label1.Location = new System.Drawing.Point(23, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "LOGO";
+            this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSair.BackColor = System.Drawing.Color.White;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
+            this.btnSair.Location = new System.Drawing.Point(946, 4);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(52, 47);
+            this.btnSair.TabIndex = 10;
+            this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // label2
+            // panel2
             // 
-            this.label2.Location = new System.Drawing.Point(46, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Cliente";
+            this.panel2.Controls.Add(this.btnSair);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1000, 53);
+            this.panel2.TabIndex = 9;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(134)))), ((int)(((byte)(179)))));
-            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.panelIni);
+            this.panel4.Controls.Add(this.panelRes);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(200, 53);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1000, 87);
-            this.panel4.TabIndex = 3;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4Paint);
+            this.panel4.TabIndex = 11;
+            // 
+            // panelIni
+            // 
+            this.panelIni.Controls.Add(this.button3);
+            this.panelIni.Controls.Add(this.button2);
+            this.panelIni.Controls.Add(this.button1);
+            this.panelIni.Location = new System.Drawing.Point(32, 38);
+            this.panelIni.Name = "panelIni";
+            this.panelIni.Size = new System.Drawing.Size(407, 44);
+            this.panelIni.TabIndex = 6;
+            // 
+            // panelRes
+            // 
+            this.panelRes.Controls.Add(this.label5);
+            this.panelRes.Controls.Add(this.label6);
+            this.panelRes.Location = new System.Drawing.Point(31, 38);
+            this.panelRes.Name = "panelRes";
+            this.panelRes.Size = new System.Drawing.Size(349, 44);
+            this.panelRes.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(8, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 23);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Check-in";
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(116, 14);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 23);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Reserva";
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(11, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Cliente";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(119, 13);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 27);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Funcionários";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(257, 14);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 27);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Funcionários";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // userControl21
             // 
@@ -262,42 +330,75 @@ namespace TesteResort
             this.userControl21.Location = new System.Drawing.Point(200, 141);
             this.userControl21.Margin = new System.Windows.Forms.Padding(6);
             this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(1000, 595);
-            this.userControl21.TabIndex = 4;
+            this.userControl21.Size = new System.Drawing.Size(1000, 608);
+            this.userControl21.TabIndex = 8;
+            // 
+            // cadFunc1
+            // 
+            this.cadFunc1.BackColor = System.Drawing.Color.White;
+            this.cadFunc1.Location = new System.Drawing.Point(201, 141);
+            this.cadFunc1.Name = "cadFunc1";
+            this.cadFunc1.Size = new System.Drawing.Size(990, 660);
+            this.cadFunc1.TabIndex = 10;
             // 
             // controleReserva1
             // 
             this.controleReserva1.BackColor = System.Drawing.Color.White;
             this.controleReserva1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.controleReserva1.Location = new System.Drawing.Point(210, 148);
+            this.controleReserva1.Location = new System.Drawing.Point(201, 141);
             this.controleReserva1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.controleReserva1.Name = "controleReserva1";
-            this.controleReserva1.Size = new System.Drawing.Size(1000, 588);
-            this.controleReserva1.TabIndex = 5;
+            this.controleReserva1.Size = new System.Drawing.Size(990, 600);
+            this.controleReserva1.TabIndex = 12;
             // 
-            // Form1
+            // quartos1
+            // 
+            this.quartos1.BackColor = System.Drawing.Color.White;
+            this.quartos1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quartos1.Location = new System.Drawing.Point(200, 141);
+            this.quartos1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.quartos1.Name = "quartos1";
+            this.quartos1.Size = new System.Drawing.Size(950, 555);
+            this.quartos1.TabIndex = 13;
+            // 
+            // Form2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 749);
-            this.Controls.Add(this.userControl21);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.cadFunc1);
             this.Controls.Add(this.controleReserva1);
+            this.Controls.Add(this.quartos1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "Form1";
+            this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1Load);
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.Text = "Form2";
             this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panelIni.ResumeLayout(false);
+            this.panelRes.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
-	}
+
+        private CadFunc cadFunc1;
+        private System.Windows.Forms.Panel panel4;
+        private ControleReserva controleReserva1;
+        private System.Windows.Forms.Panel panelRes;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panelIni;
+        private Quartos quartos1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+    }
 }

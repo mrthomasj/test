@@ -61,11 +61,7 @@ namespace TesteResort
 			
 			
 		}
-		void BtnCkInClick(object sender, EventArgs e)
-		{
-			btnCkIn.Height = pnClick.Height;
-			pnClick.Top = btnCkIn.Top;
-		}
+	
 		void BtnCkotClick(object sender, EventArgs e)
 		{
 			btnCkot.Height = pnClick.Height;

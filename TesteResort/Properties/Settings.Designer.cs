@@ -26,21 +26,11 @@ namespace TesteResort.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=db_pi")]
-        public string db_piConnectionString {
-            get {
-                return ((string)(this["db_piConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("server=pi.aambrosio.com;user id=db_analyst;password=!!pass123;persistsecurityinfo" +
             "=True;database=dbo_pi")]
-        public string dbo_pi_online_CS {
+        public string dbo_piConnectionString {
             get {
-                return ((string)(this["dbo_pi_online_CS"]));
+                return ((string)(this["dbo_piConnectionString"]));
             }
         }
     }
