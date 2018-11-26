@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace TesteResort
 {
-    public partial class Extras : UserControl
+    public partial class extras : UserControl
     {
-        public Extras()
+        public extras()
         {
             InitializeComponent();
         }

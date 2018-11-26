@@ -34,9 +34,6 @@ namespace TesteResort
 	
 		}
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            richTextBox1.Visible = true;
-        }
+      
     }
 }
