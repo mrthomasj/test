@@ -33,5 +33,15 @@ namespace TesteResort.Properties {
                 return ((string)(this["dbo_piConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=db_pi")]
+        public string db_piConnectionString {
+            get {
+                return ((string)(this["db_piConnectionString"]));
+            }
+        }
     }
 }

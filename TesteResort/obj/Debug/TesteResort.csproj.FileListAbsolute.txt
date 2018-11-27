@@ -47,6 +47,7 @@ E:\TesteResort\TesteResort\obj\Debug\TesteResort.pdb
 C:\Stuff\test\TesteResort\bin\Debug\TesteResort.exe.config
 C:\Stuff\test\TesteResort\obj\Debug\TesteResort.exe
 C:\Stuff\test\TesteResort\obj\Debug\TesteResort.pdb
+<<<<<<< HEAD
 C:\Users\Aluno\Documents\test\TesteResort\bin\Debug\TesteResort.exe.config
 C:\Users\Aluno\Documents\test\TesteResort\obj\Debug\TesteResort.exe
 C:\Users\Aluno\Documents\test\TesteResort\obj\Debug\TesteResort.pdb
@@ -64,3 +65,21 @@ C:\Users\Aluno\Documents\test\TesteResort\obj\Debug\TesteResort.UserControl2.res
 C:\Users\Aluno\Documents\test\TesteResort\obj\Debug\TesteResort.csproj.GenerateResource.Cache
 C:\Users\Aluno\Documents\test\TesteResort\obj\Debug\TesteResort.extras.resources
 C:\Users\Aluno\Documents\test\TesteResort\obj\Debug\TesteResort.Reserva.resources
+=======
+C:\Stuff\test\TesteResort\bin\Debug\TesteResort.exe
+C:\Stuff\test\TesteResort\bin\Debug\TesteResort.pdb
+C:\Stuff\test\TesteResort\bin\Debug\MySql.Data.dll
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.csprojResolveAssemblyReference.cache
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.CadFunc.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.CadUser.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.Form1.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.Form2.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.Form3.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.UserControl3.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.MainForm.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.Properties.Resources.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.Quartos.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.ControleReserva.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.UserControl2.resources
+C:\Stuff\test\TesteResort\obj\Debug\TesteResort.csproj.GenerateResource.Cache
+>>>>>>> sistema-resort1
