@@ -18,7 +18,6 @@ namespace TesteResort
 		private System.Windows.Forms.Panel panel3;
 		private TesteResort.UserControl2 userControl21;
 		private System.Windows.Forms.Panel pnClick;
-		private System.Windows.Forms.Button btnCkot;
 		private System.Windows.Forms.Button btnEx;
 		private System.Windows.Forms.Button btnPac;
 		private System.Windows.Forms.Button btnQrt;
@@ -53,7 +52,6 @@ namespace TesteResort
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnClick = new System.Windows.Forms.Panel();
-            this.btnCkot = new System.Windows.Forms.Button();
             this.btnEx = new System.Windows.Forms.Button();
             this.btnPac = new System.Windows.Forms.Button();
             this.btnQrt = new System.Windows.Forms.Button();
@@ -64,16 +62,19 @@ namespace TesteResort
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelIni = new System.Windows.Forms.Panel();
-            this.panelRes = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panelRes = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.extras1 = new TesteResort.extras();
             this.userControl21 = new TesteResort.UserControl2();
             this.cadFunc1 = new TesteResort.CadFunc();
             this.controleReserva1 = new TesteResort.ControleReserva();
             this.quartos1 = new TesteResort.Quartos();
+            this.reserva1 = new TesteResort.Reserva();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -107,22 +108,6 @@ namespace TesteResort
             this.pnClick.Size = new System.Drawing.Size(10, 69);
             this.pnClick.TabIndex = 3;
             // 
-            // btnCkot
-            // 
-            this.btnCkot.FlatAppearance.BorderSize = 0;
-            this.btnCkot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCkot.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCkot.ForeColor = System.Drawing.Color.White;
-            this.btnCkot.Image = ((System.Drawing.Image)(resources.GetObject("btnCkot.Image")));
-            this.btnCkot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCkot.Location = new System.Drawing.Point(14, 471);
-            this.btnCkot.Name = "btnCkot";
-            this.btnCkot.Size = new System.Drawing.Size(185, 68);
-            this.btnCkot.TabIndex = 8;
-            this.btnCkot.Text = "Check-out";
-            this.btnCkot.UseVisualStyleBackColor = true;
-            this.btnCkot.Click += new System.EventHandler(this.btnCkot_Click);
-            // 
             // btnEx
             // 
             this.btnEx.FlatAppearance.BorderSize = 0;
@@ -147,7 +132,7 @@ namespace TesteResort
             this.btnPac.ForeColor = System.Drawing.Color.White;
             this.btnPac.Image = ((System.Drawing.Image)(resources.GetObject("btnPac.Image")));
             this.btnPac.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPac.Location = new System.Drawing.Point(14, 553);
+            this.btnPac.Location = new System.Drawing.Point(15, 463);
             this.btnPac.Name = "btnPac";
             this.btnPac.Size = new System.Drawing.Size(185, 68);
             this.btnPac.TabIndex = 5;
@@ -207,7 +192,6 @@ namespace TesteResort
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(134)))), ((int)(((byte)(179)))));
             this.panel1.Controls.Add(this.pnClick);
-            this.panel1.Controls.Add(this.btnCkot);
             this.panel1.Controls.Add(this.btnEx);
             this.panel1.Controls.Add(this.btnPac);
             this.panel1.Controls.Add(this.btnQrt);
@@ -259,46 +243,21 @@ namespace TesteResort
             this.panelIni.Controls.Add(this.button3);
             this.panelIni.Controls.Add(this.button2);
             this.panelIni.Controls.Add(this.button1);
-            this.panelIni.Location = new System.Drawing.Point(32, 38);
+            this.panelIni.Location = new System.Drawing.Point(31, 38);
             this.panelIni.Name = "panelIni";
             this.panelIni.Size = new System.Drawing.Size(407, 44);
             this.panelIni.TabIndex = 6;
             // 
-            // panelRes
+            // button3
             // 
-            this.panelRes.Controls.Add(this.label5);
-            this.panelRes.Controls.Add(this.label6);
-            this.panelRes.Location = new System.Drawing.Point(31, 38);
-            this.panelRes.Name = "panelRes";
-            this.panelRes.Size = new System.Drawing.Size(349, 44);
-            this.panelRes.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(8, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 23);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Check-in";
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(116, 14);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 23);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Reserva";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(11, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 27);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Cliente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(257, 14);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 27);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Relatórios";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -312,16 +271,72 @@ namespace TesteResort
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button1
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(257, 14);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 27);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Funcionários";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(11, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Cliente";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panelRes
+            // 
+            this.panelRes.Controls.Add(this.button4);
+            this.panelRes.Controls.Add(this.button5);
+            this.panelRes.Controls.Add(this.button6);
+            this.panelRes.Location = new System.Drawing.Point(31, 38);
+            this.panelRes.Name = "panelRes";
+            this.panelRes.Size = new System.Drawing.Size(349, 44);
+            this.panelRes.TabIndex = 5;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(214, 8);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(87, 27);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Saída";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(121, 8);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(87, 27);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "Reservas";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(13, 9);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(102, 27);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Entrada";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // extras1
+            // 
+            this.extras1.BackColor = System.Drawing.Color.White;
+            this.extras1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extras1.Location = new System.Drawing.Point(200, 140);
+            this.extras1.Margin = new System.Windows.Forms.Padding(5);
+            this.extras1.Name = "extras1";
+            this.extras1.Size = new System.Drawing.Size(989, 596);
+            this.extras1.TabIndex = 14;
             // 
             // userControl21
             // 
@@ -361,6 +376,14 @@ namespace TesteResort
             this.quartos1.Size = new System.Drawing.Size(950, 555);
             this.quartos1.TabIndex = 13;
             // 
+            // reserva1
+            // 
+            this.reserva1.BackColor = System.Drawing.Color.White;
+            this.reserva1.Location = new System.Drawing.Point(200, 141);
+            this.reserva1.Name = "reserva1";
+            this.reserva1.Size = new System.Drawing.Size(988, 524);
+            this.reserva1.TabIndex = 15;
+            // 
             // Form2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -373,6 +396,8 @@ namespace TesteResort
             this.Controls.Add(this.cadFunc1);
             this.Controls.Add(this.controleReserva1);
             this.Controls.Add(this.quartos1);
+            this.Controls.Add(this.reserva1);
+            this.Controls.Add(this.extras1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -393,12 +418,15 @@ namespace TesteResort
         private System.Windows.Forms.Panel panel4;
         private ControleReserva controleReserva1;
         private System.Windows.Forms.Panel panelRes;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panelIni;
         private Quartos quartos1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private extras extras1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private Reserva reserva1;
     }
 }

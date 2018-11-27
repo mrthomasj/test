@@ -9,13 +9,11 @@ using System.Windows.Forms;
 
 namespace TesteResort
 {
-    public partial class CadFunc : UserControl
+    public partial class Reserva : UserControl
     {
-        public CadFunc()
+        public Reserva()
         {
             InitializeComponent();
         }
-
-       
     }
 }

@@ -55,14 +55,10 @@ namespace TesteResort
         {
             btnEx.Height = pnClick.Height;
             pnClick.Top = btnEx.Top;
+            extras1.BringToFront();
         }
 
-        private void btnCkot_Click(object sender, EventArgs e)
-        {
-            btnCkot.Height = pnClick.Height;
-            pnClick.Top = btnCkot.Top;
-        }
-
+     
         private void btnPac_Click(object sender, EventArgs e)
         {
             btnPac.Height = pnClick.Height;
@@ -89,7 +85,22 @@ namespace TesteResort
 
         private void button2_Click(object sender, EventArgs e)
         {
+            cadFunc1.BringToFront();
+        }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            controleReserva1.BringToFront();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            reserva1.BringToFront();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            userControl21.BringToFront();
         }
     }
 }
